@@ -1,0 +1,37 @@
+{
+  "name": "minimalnockback",
+  "version": "0.0.0",
+  "private": true,
+  "watch": {
+    "test": "**/test*.js"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "test": "find test -type f -iname 'test*.js' | parallel -s 'node {} | faucet'",
+    "watch": "NODE_ENV=test npm-watch"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "app-root-path": "^2.1.0",
+    "faucet": "0.0.1",
+    "generator-tape-parallel": "^1.0.3",
+    "leaked-handles": "^5.2.0",
+    "nock": "^9.6.1",
+    "nodemon": "^1.18.3",
+    "parallel": "^1.2.0",
+    "supertest": "^3.1.0",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.9.1",
+    "tape-catch": "^1.0.6",
+    "tape-nock": "^1.6.0",
+    "yo": "^2.0.5"
+  }
+}
