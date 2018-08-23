@@ -1,0 +1,29 @@
+[
+    {
+        "scope": "http://127.0.0.1:36351",
+        "method": "GET",
+        "path": "/users/",
+        "body": "",
+        "status": 200,
+        "response": {
+            "user": "Bill Clinton",
+            "org": "TechOps",
+            "role": "Admin",
+            "uid": "crodriguez"
+        },
+        "rawHeaders": [
+            "X-Powered-By",
+            "Express",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "73",
+            "ETag",
+            "W/\"49-E5F36M+ULegVp4u/g1Jr2qWBX1E\"",
+            "Date",
+            "Thu, 23 Aug 2018 15:11:45 GMT",
+            "Connection",
+            "close"
+        ]
+    }
+]

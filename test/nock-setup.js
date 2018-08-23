@@ -12,11 +12,11 @@ var test = tapeNock(tape, { //options object to be passed to nock, not required
       // allow connections to 127.0.0.1 even when NOCK_BACK_MODE=lockdown
       console.log('Before function Fire');
       tapeNock.nock.enableNetConnect('127.0.0.1');
-      console.log('Nock is enabled: ' + nock.isActive());
+      console.log('Nock is enabled: ' + tapeNock.nock.isActive());
     },
     after: function () {
       console.log('After Function Fire');
-      console.log('Nock is Enabled: ', nock.isActive());
+      console.log('Nock is Enabled: ', tapeNock.nock.isActive());
     }
   }
 });
